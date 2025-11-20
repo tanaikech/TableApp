@@ -15,7 +15,11 @@ Recently, a new feature "Tables" was introduced to Google Sheets. Tables allow u
 
 This library, `TableApp`, creates an object-oriented wrapper around the Google Sheets API, making it easy to manage Tables directly within Google Apps Script.
 
-## Library's Script ID
+## Usage
+
+### Install library
+
+**Library's Script ID**
 
 ```
 1G4RVvyLtwPjQl6x_p8j3X65-yYVU3w2dMXxHDuzCgorucjs8P3Clv5Qt
@@ -26,7 +30,7 @@ This library, `TableApp`, creates an object-oriented wrapper around the Google S
 
 <a name="requirements"></a>
 
-## Requirements
+### Enable API
 
 This library uses the **Google Sheets API**.
 
@@ -39,8 +43,8 @@ This library uses the **Google Sheets API**.
 
 This library uses the following scopes.
 
-- `https://www.googleapis.com/auth/spreadsheets.readonly`
-- `https://www.googleapis.com/auth/spreadsheets`
+- `https://www.googleapis.com/auth/spreadsheets.readonly`: If you use this scope, you can use only `get` methods.
+- `https://www.googleapis.com/auth/spreadsheets`: If you use this scope, you can use all methods of this library.
 
 If you use only `get` methods, you can use them with only `https://www.googleapis.com/auth/spreadsheets.readonly`. If you use methods other than `get` (e.g., create, update, delete), please use `https://www.googleapis.com/auth/spreadsheets`.
 
